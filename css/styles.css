@@ -7,6 +7,8 @@
   --team-background-color: #f5f4fa;
   --portfolio-border-color: #EEEEEE;
   --header-border-color: #ECECEC;
+  --background-hero-color: #C4C4C4;
+  --gradient-hero-color: rgba(47, 48, 58, 0.4);
 }
 
 /* позыцыонирование */
@@ -181,16 +183,20 @@ img {
 .address-link:focus {
   color: var(--accent-color);
 }
+.address-link::before {
 
+}
 /* герой */
 
 .hero {
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 600px;
   align-items: center;
+  background-color: var(--background-hero-color);
 }
 
 .hero-title {
@@ -205,8 +211,6 @@ img {
 
 .hero-content {
   max-width: 696px;
-  align-items: center;
-
   }
 
 .hero-button {
@@ -241,6 +245,23 @@ img {
 }
 .advantages-list .item:nth-child(4n) {
   margin-right: 0;
+}
+
+.advantages-list .item::before {
+  display: block;
+  content: '';
+height: 120px;
+width: 270px;
+background-color: var(--team-background-color);
+
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+background-size: 70px 70px;
+}
+
+.advantages-list .icon-warning::before {
+background-image: url(../images/1.svg);
 }
 
 .advantages-title {
@@ -319,6 +340,8 @@ img {
 
   color: var(--primary-text-color);
 }
+
+
 
 /* портфолио */
 
