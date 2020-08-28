@@ -161,6 +161,8 @@ img {
   color: var(--accent-color);
 }
 
+
+
 .address {
   margin-left: auto;
 }
@@ -179,13 +181,38 @@ img {
   color: var(--primary-text-color);
 }
 
+.address-link::before {
+  display: inline-block;
+  content: '';
+
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
+margin-right: 10px;
+
+}
+
+.icon-email::before {
+background-image: url(../images/email.svg);
+width: 16px;
+height: 12px;
+background-size: 16px 12px;
+}
+
+.icon-phone::before {
+  background-image: url(../images/phone.svg);
+  width: 10px;
+  height: 16px;
+  background-size: 10px 16px;
+}
+
+
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
 }
-.address-link::before {
 
-}
 /* герой */
 
 .hero {
@@ -237,10 +264,11 @@ img {
 }
 .advantages-list {
   padding-left: 0;
+flex-wrap: wrap;
 }
 .advantages-list .item {
   width: calc((100% - 30px * 3) / 4);
-  flex-wrap: wrap;
+  
   margin-right: 30px;
 }
 .advantages-list .item:nth-child(4n) {
@@ -253,6 +281,7 @@ img {
 height: 120px;
 width: 270px;
 background-color: var(--team-background-color);
+margin-bottom: 30px;
 
 background-repeat: no-repeat;
 background-size: contain;
@@ -262,6 +291,18 @@ background-size: 70px 70px;
 
 .advantages-list .icon-warning::before {
 background-image: url(../images/1.svg);
+}
+
+.advantages-list .icon-punctuality::before {
+background-image: url(../images/2.svg);
+}
+
+.advantages-list .icon-planning::before {
+background-image: url(../images/3.svg);
+}
+
+.advantages-list .icon-moderntechnology::before {
+background-image: url(../images/4.svg);
 }
 
 .advantages-title {

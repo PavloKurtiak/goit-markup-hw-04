@@ -34,13 +34,15 @@
         <!--адрес-->
         <address class="address">
           <ul class="flexbox list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="address-link"
+            <li class="flexbox item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="address-link icon-email"
                 >info@devstudio.com</a
               >
             </li>
             <li class="item">
-              <a href="tel:+380961111111" class="address-link"
+              <a href="tel:+380961111111" class="address-link icon-phone"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -52,8 +54,10 @@
     <main>
       <!--герой-->
       <section class="flexbox margin-auto hero">
-        <div class="margin-auto list hero-content ">
-          <h1 class="list hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <div class="margin-auto list hero-content">
+          <h1 class="list hero-title">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
 
           <button class="margin-auto button hero-button" type="button">
             Заказать услугу
@@ -72,21 +76,21 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="item ">
+            <li class="item icon-punctuality">
               <h3 class="advantages-title">ПУНКТУАЛЬНОСТЬ</h3>
               <p class="advantages-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item ">
+            <li class="item icon-planning">
               <h3 class="advantages-title">ПЛАНИРОВАНИЕ</h3>
               <p class="advantages-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item ">
+            <li class="item icon-moderntechnology">
               <h3 class="advantages-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
               <p class="advantages-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -142,12 +146,18 @@
               />
               <h3 class="employee-name">Игорь Демьяненко</h3>
               <p class="profession-name">Product Designer</p>
-              <div class="flexbox list-link">
-                <li><a class="icon" href="" lang="en" aria-label="instagram"></a></li>
-                <li><a class="icon" href="" lang="en" aria-label="twitter"></a></li>
-                <li><a class="icon" href="" lang="en" aria-label="facebook"></a></li>
-                <li><a class="icon" href="" lang="en" aria-label="linedin"></a></li>
-              </div>
+              <ul class="acction"> 
+                <li>
+                  <button>
+                    <svg> 
+                      <use href="./images/20.svg"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </li>
             <li class="team-item item">
               <img
@@ -158,12 +168,6 @@
               />
               <h3 class="employee-name">Ольга Репина</h3>
               <p class="profession-name">Frontend Developer</p>
-              <div>
-                <li><a href="" lang="en" aria-label="instagram"></a></li>
-                <li><a href="" lang="en" aria-label="twitter"></a></li>
-                <li><a href="" lang="en" aria-label="facebook"></a></li>
-                <li><a href="" lang="en" aria-label="linedin"></a></li>
-              </div>
             </li>
             <li class="team-item item">
               <img
@@ -184,12 +188,6 @@
               />
               <h3 class="employee-name">Михаил Ермаков</h3>
               <p class="profession-name">UI Designer</p>
-              <div>
-                <li><a href="" lang="en" aria-label="instagram"></a></li>
-                <li><a href="" lang="en" aria-label="twitter"></a></li>
-                <li><a href="" lang="en" aria-label="facebook"></a></li>
-                <li><a href="" lang="en" aria-label="linedin"></a></li>
-              </div>
             </li>
           </ul>
         </div>
@@ -199,17 +197,21 @@
     <footer class="footer">
       <div class="container">
         <a href="" lang="en" class="logo">
-          <span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
+          <span class="logo-blue">Web</span
+          ><span class="logo-white">Studio</span></a
+        >
         <address class="footer-address">
           <ul class="list">
-            <li class="address-text item">
-              г. Киев, пр-т Леси Украинки, 26
+            <li class="address-text item">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="item">
+              <a href="mailto:info@example.com" class="address-link"
+                >info@example.com</a
+              >
             </li>
             <li class="item">
-              <a href="mailto:info@example.com" class="address-link">info@example.com</a>
-            </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a>
+              <a href="tel:+380991111111" class="address-link"
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </address>
