@@ -5,9 +5,9 @@
   --primary-white-color: #ffffff;
   --footer-background-color: #2f303a;
   --team-background-color: #f5f4fa;
-  --portfolio-border-color: #EEEEEE;
-  --header-border-color: #ECECEC;
-  --background-hero-color: #C4C4C4;
+  --portfolio-border-color: #eeeeee;
+  --header-border-color: #ececec;
+  --background-hero-color: #c4c4c4;
   --gradient-hero-color: rgba(47, 48, 58, 0.4);
 }
 
@@ -161,8 +161,6 @@ img {
   color: var(--accent-color);
 }
 
-
-
 .address {
   margin-left: auto;
 }
@@ -183,21 +181,20 @@ img {
 
 .address-link::before {
   display: inline-block;
-  content: '';
+  content: "";
 
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
-margin-right: 10px;
-
+  margin-right: 10px;
 }
 
 .icon-email::before {
-background-image: url(../images/email.svg);
-width: 16px;
-height: 12px;
-background-size: 16px 12px;
+  background-image: url(../images/email.svg);
+  width: 16px;
+  height: 12px;
+  background-size: 16px 12px;
 }
 
 .icon-phone::before {
@@ -207,7 +204,6 @@ background-size: 16px 12px;
   background-size: 10px 16px;
 }
 
-
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
@@ -216,7 +212,11 @@ background-size: 16px 12px;
 /* герой */
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,10 +238,10 @@ background-size: 16px 12px;
 
 .hero-content {
   max-width: 696px;
-  }
+}
 
 .hero-button {
-      display: block;
+  display: block;
   margin-top: 30px;
   min-width: 200px;
   padding: 10px 32px;
@@ -264,11 +264,11 @@ background-size: 16px 12px;
 }
 .advantages-list {
   padding-left: 0;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .advantages-list .item {
   width: calc((100% - 30px * 3) / 4);
-  
+
   margin-right: 30px;
 }
 .advantages-list .item:nth-child(4n) {
@@ -277,32 +277,32 @@ flex-wrap: wrap;
 
 .advantages-list .item::before {
   display: block;
-  content: '';
-height: 120px;
-width: 270px;
-background-color: var(--team-background-color);
-margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  width: 270px;
+  background-color: var(--team-background-color);
+  margin-bottom: 30px;
 
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
-background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: 70px 70px;
 }
 
 .advantages-list .icon-warning::before {
-background-image: url(../images/1.svg);
+  background-image: url(../images/1.svg);
 }
 
 .advantages-list .icon-punctuality::before {
-background-image: url(../images/2.svg);
+  background-image: url(../images/2.svg);
 }
 
 .advantages-list .icon-planning::before {
-background-image: url(../images/3.svg);
+  background-image: url(../images/3.svg);
 }
 
 .advantages-list .icon-moderntechnology::before {
-background-image: url(../images/4.svg);
+  background-image: url(../images/4.svg);
 }
 
 .advantages-title {
@@ -382,7 +382,33 @@ background-image: url(../images/4.svg);
   color: var(--primary-text-color);
 }
 
+/* роблю свг */
 
+/* .action .link-item {
+  padding: 0;
+  border: none;
+} */
+
+.team-list .action {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: solid #212121;
+}
+
+.action a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/ellipse.svg);
+}
+
+/* .action .link-icon {
+  width: 44px;
+  height: 44px;
+  fill: #212121;
+} */
 
 /* портфолио */
 
@@ -424,9 +450,6 @@ background-image: url(../images/4.svg);
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  
-  
-  
 }
 .portfolio-list .item:nth-child(3n) {
   margin-right: 0;
@@ -447,7 +470,6 @@ background-image: url(../images/4.svg);
 .portfolio-title {
   margin-top: 0;
   margin-bottom: 0;
-  
 
   font-weight: 700;
   font-size: 18px;
@@ -473,7 +495,7 @@ background-image: url(../images/4.svg);
 
 .address-text {
   margin-top: 20px;
-  
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
