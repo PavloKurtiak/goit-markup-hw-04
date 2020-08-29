@@ -457,6 +457,35 @@ img {
   margin-right: 0;
 }
 
+/* клиенты */
+.customers-list {
+  padding: 0;
+}
+
+.customers-item {
+  
+}
+
+.customers-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.customers-link {
+  fill: var(--icon-main-fell);
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-main-fell);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.customers-link:hover, .customers-link:focus{
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* портфолио */
 
 .filter-list {
