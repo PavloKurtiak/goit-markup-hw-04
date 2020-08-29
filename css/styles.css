@@ -10,6 +10,7 @@
   --background-hero-color: #c4c4c4;
   --gradient-hero-color: rgba(47, 48, 58, 0.4);
   --icon-main-fell: #afb1b8;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* позыцыонирование */
@@ -360,8 +361,9 @@ img {
   flex-wrap: wrap;
   margin-right: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list .item:nth-child(4n) {
   margin-right: 0;
@@ -395,16 +397,15 @@ border-radius: 0px 0px 4px 4px;
 
 /* роблю свг */
 
-
 .team-list .action {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-    padding-left: 32px;
+  padding-left: 32px;
   padding-right: 32px;
   margin-top: 16px;
-  outline: 1px solid black
+  outline: 1px solid black;
 }
 
 .action .link-item {
@@ -416,14 +417,14 @@ border-radius: 0px 0px 4px 4px;
   fill: var(--icon-main-fell);
 }
 
-.action .link-item:hover,.action .link-item:focus {
+.action .link-item:hover,
+.action .link-item:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
 .action .list-icon {
-margin-right: 10px;
-
+  margin-right: 10px;
 }
 
 .action .list-icon:nth-child(4n) {
@@ -527,4 +528,23 @@ margin-right: 10px;
 
 .footer-address .item:not(:first-child) {
   margin-top: 9px;
+}
+
+.colum {
+  flex-direction: column;
+}
+
+.join .link-item {
+  fill: var(--primary-white-color);
+  background-color: var(--icon-background-color);
+}
+
+.join .link-item:hover,
+.join .link-item:focus {
+  background-color: var(--accent-color);
+}
+.join .action {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 0;
 }
