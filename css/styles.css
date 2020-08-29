@@ -9,6 +9,7 @@
   --header-border-color: #ececec;
   --background-hero-color: #c4c4c4;
   --gradient-hero-color: rgba(47, 48, 58, 0.4);
+  --icon-main-fell: #afb1b8;
 }
 
 /* позыцыонирование */
@@ -384,10 +385,6 @@ img {
 
 /* роблю свг */
 
-/* .action .link-item {
-  padding: 0;
-  border: none;
-} */
 
 .team-list .action {
   display: flex;
@@ -395,20 +392,50 @@ img {
   margin: 0;
   list-style: none;
   outline: solid #212121;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
 }
 
-.action a {
-  display: block;
+.action .link-item {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-image: url(../images/ellipse.svg);
+    border: none;
+  
+}
+.action .link-item:hover,.action .link-item:focus {
+  background-color: var(--accent-color);
+  
 }
 
-/* .action .link-icon {
-  width: 44px;
-  height: 44px;
-  fill: #212121;
-} */
+.action .list-icon {
+margin-right: 10px;
+
+}
+
+.action .list-icon:nth-child(4n) {
+  margin-right: 0;
+}
+
+
+.action .link-item {
+  fill: var(--icon-main-fell);
+  
+}
+.action .link-item:hover, .action .link-icon:focus {
+  fill: var(--primary-white-color);
+}
+
+
+.action .link-icon:hover {
+  
+
+}
+
 
 /* портфолио */
 
