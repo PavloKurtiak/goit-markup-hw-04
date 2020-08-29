@@ -179,7 +179,7 @@ img {
 }
 
 .address .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .address-link {
@@ -188,10 +188,36 @@ img {
   line-height: 1.15;
   letter-spacing: 0.02em;
   font-style: normal;
+  justify-content: center;
+  align-items: center;
 
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
+/* інлайн свг */
+
+.address-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  outline: 1px solid black;
+}
+
+.address-list .icon {
+  margin-right: 10px;
+}
+
+.address-link:hover,
+.address-link:focus {
+  fill: var(--accent-color);
+}
+
+/* фон */
+
+/* 
 .address-link::before {
   display: inline-block;
   content: "";
@@ -201,9 +227,9 @@ img {
   background-position: center;
 
   margin-right: 10px;
-}
+} */
 
-.icon-email::before {
+/* .icon-email::before {
   background-image: url(../images/email.svg);
   width: 16px;
   height: 12px;
@@ -215,7 +241,7 @@ img {
   width: 10px;
   height: 16px;
   background-size: 10px 16px;
-}
+} */
 
 .address-link:hover,
 .address-link:focus {
