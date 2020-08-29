@@ -109,6 +109,17 @@ img {
   color: var(--title-text-color);
 }
 
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* шапка */
 
 .site-nav-list .item {
@@ -260,9 +271,6 @@ img {
 
 /* преимущеста */
 
-.hidden-title {
-  font-size: 0;
-}
 .advantages-list {
   padding-left: 0;
   flex-wrap: wrap;
@@ -352,6 +360,8 @@ img {
   flex-wrap: wrap;
   margin-right: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-list .item:nth-child(4n) {
   margin-right: 0;
@@ -391,25 +401,24 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  outline: solid #212121;
-  padding-left: 32px;
+    padding-left: 32px;
   padding-right: 32px;
   margin-top: 16px;
+  outline: 1px solid black
 }
 
 .action .link-item {
   justify-content: center;
   align-items: center;
-  padding: 0;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-    border: none;
-  
+  fill: var(--icon-main-fell);
 }
+
 .action .link-item:hover,.action .link-item:focus {
   background-color: var(--accent-color);
-  
+  fill: var(--primary-white-color);
 }
 
 .action .list-icon {
@@ -420,22 +429,6 @@ margin-right: 10px;
 .action .list-icon:nth-child(4n) {
   margin-right: 0;
 }
-
-
-.action .link-item {
-  fill: var(--icon-main-fell);
-  
-}
-.action .link-item:hover, .action .link-icon:focus {
-  fill: var(--primary-white-color);
-}
-
-
-.action .link-icon:hover {
-  
-
-}
-
 
 /* портфолио */
 
