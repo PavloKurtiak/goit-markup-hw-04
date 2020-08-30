@@ -386,6 +386,10 @@ img {
 
 /* команда */
 
+.team-item {
+  background-color: var(--primary-white-color);
+}
+
 .team {
   background-color: var(--team-background-color);
 }
@@ -446,6 +450,7 @@ img {
   width: 44px;
   height: 44px;
   fill: var(--icon-main-fell);
+  background-color: var(--primary-white-color);
 }
 
 .action .link-item:hover,
